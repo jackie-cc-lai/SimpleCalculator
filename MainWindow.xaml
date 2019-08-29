@@ -1,0 +1,39 @@
+﻿<Window x:Class="SimpleCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleCalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="button1" Content="1" HorizontalAlignment="Left" Margin="119,203,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button2" Content="2" HorizontalAlignment="Left" Margin="217,203,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button3" Content="3" HorizontalAlignment="Left" Margin="317,203,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button4" Content="4" HorizontalAlignment="Left" Margin="119,240,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button5" Content="5" HorizontalAlignment="Left" Margin="217,240,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button6" Content="6" HorizontalAlignment="Left" Margin="317,240,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button7" Content="7" HorizontalAlignment="Left" Margin="119,275,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button8" Content="8" HorizontalAlignment="Left" Margin="217,275,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button9" Content="9" HorizontalAlignment="Left" Margin="317,275,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="buttondec" Content="." HorizontalAlignment="Left" Margin="119,313,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="button0" Content="0" HorizontalAlignment="Left" Margin="217,313,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Num"/>
+        <Button x:Name="buttoneq" Content="=" HorizontalAlignment="Left" Margin="317,313,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Res"/>
+        <Button x:Name="buttondiv" Content="/" HorizontalAlignment="Left" Margin="418,240,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Op"/>
+        <Button x:Name="buttonplus" Content="+" HorizontalAlignment="Left" Margin="418,275,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Op"/>
+        <Button x:Name="buttonmult" Content="*" HorizontalAlignment="Left" Margin="418,203,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Op"/>
+        <Button x:Name="buttonsub" Content="-" HorizontalAlignment="Left" Margin="418,313,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Op"/>
+        <Button x:Name="buttonsqrt" Content="sqrt" HorizontalAlignment="Left" Margin="119,169,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Op"/>
+        <Button x:Name="buttonln" Content="ln" HorizontalAlignment="Left" Margin="217,169,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Op"/>
+        <Button x:Name="buttonexp" Content="exp" HorizontalAlignment="Left" Margin="317,169,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Op"/>
+        <Button x:Name="buttonC" Content="C" HorizontalAlignment="Left" Margin="418,169,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Er"/>
+        <Button x:Name="buttonsin" Content="sin" HorizontalAlignment="Left" Margin="119,133,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Res"/>
+        <Button x:Name="buttoncos" Content="cos" HorizontalAlignment="Left" Margin="217,133,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Res"/>
+        <Button x:Name="buttontan" Content="tan" HorizontalAlignment="Left" Margin="317,133,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Res"/>
+        <TextBox x:Name="textBoxInput" HorizontalAlignment="Center" Height="25" Margin="119,95,299,0" TextWrapping="Wrap" Text="Input" VerticalAlignment="Top" TextAlignment="Center" Width="374"/>
+        <TextBox x:Name="textBoxNum1" HorizontalAlignment="Left" Height="23" Margin="527,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.189,-0.408"/>
+        <TextBox x:Name="textBoxOp" HorizontalAlignment="Left" Height="23" Margin="527,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxDebug" HorizontalAlignment="Left" Height="23" Margin="527,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
