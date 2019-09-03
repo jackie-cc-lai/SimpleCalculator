@@ -35,6 +35,11 @@ namespace SimpleCalculator
             numDisp = "";
             numHidden = "";
             oper = "";
+            finalnum1 = 0;
+            finalnum2 = 0;
+            finalResult = 0;
+            textBoxInput.Text = numDisp;
+
         }
         private void Button_Click_Num(object sender, RoutedEventArgs e)
         {
@@ -45,22 +50,31 @@ namespace SimpleCalculator
         private void Button_Click_Op(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)e.Source;
-            oper = btn.Content.ToString();
-            textBoxDebug.Text = oper;
-            if(oper != "")
+            
+           
+            if(oper != "" && oper != "=")
             {
+                oper = btn.Content.ToString();
+                textBoxDebug.Text = oper;
                 textBoxOp.Text = "Route 2";
                 finalnum2 = Convert.ToDouble(numDisp);
                 finalResult = getResult(finalnum1, finalnum2);
                 numHidden = finalResult.ToString();
+                numHidden = "";
+                finalnum2 = 0;
                 finalnum1 = finalResult;
+                textBoxDebug.Text = numHidden;
  
             }
             else
             {
+                oper = btn.Content.ToString();
+                textBoxDebug.Text = oper;
                 textBoxOp.Text = "Route 1";
                 finalnum1 = Convert.ToDouble(numDisp);
+                finalnum2 = 0;
                 numHidden = numDisp;
+                textBoxDebug.Text = numHidden;
             }
             textBoxNum1.Text = numHidden;
             numDisp = "";
@@ -74,7 +88,8 @@ namespace SimpleCalculator
             if (btn.Content.ToString() == "=")
             {
                 finalnum2 = Convert.ToDouble(numDisp);
-                finalResult = getResult(finalnum1, finalnum2);                
+                finalResult = getResult(finalnum1, finalnum2);
+                oper = "=";
             } else if (btn.Content.ToString() == "sin")
             {
                 finalnum1 = Convert.ToDouble(numDisp);
@@ -109,6 +124,16 @@ namespace SimpleCalculator
             {
                 return numDisp - numHidden;
             }
+        }
+
+        private void TextBoxNum1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

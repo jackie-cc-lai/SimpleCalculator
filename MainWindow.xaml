@@ -31,9 +31,12 @@
         <Button x:Name="buttoncos" Content="cos" HorizontalAlignment="Left" Margin="217,133,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Res"/>
         <Button x:Name="buttontan" Content="tan" HorizontalAlignment="Left" Margin="317,133,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_Res"/>
         <TextBox x:Name="textBoxInput" HorizontalAlignment="Center" Height="25" Margin="119,95,299,0" TextWrapping="Wrap" Text="Input" VerticalAlignment="Top" TextAlignment="Center" Width="374"/>
-        <TextBox x:Name="textBoxNum1" HorizontalAlignment="Left" Height="23" Margin="527,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.189,-0.408"/>
-        <TextBox x:Name="textBoxOp" HorizontalAlignment="Left" Height="23" Margin="527,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxDebug" HorizontalAlignment="Left" Height="23" Margin="527,170,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxNum1" HorizontalAlignment="Left" Height="23" Margin="612,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.189,-0.408" TextChanged="TextBoxNum1_TextChanged"/>
+        <TextBox x:Name="textBoxOp" HorizontalAlignment="Left" Height="23" Margin="612,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxDebug" HorizontalAlignment="Left" Height="23" Margin="612,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="516,97,0,0" TextWrapping="Wrap" Text="NumDisp" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="516,134,0,0" TextWrapping="Wrap" Text="Operator" VerticalAlignment="Top" Width="91" TextChanged="TextBox1_TextChanged" RenderTransformOrigin="0.144,-0.543"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="516,175,0,0" TextWrapping="Wrap" Text="NumHidden" VerticalAlignment="Top" Width="91"/>
 
     </Grid>
 </Window>
