@@ -56,7 +56,6 @@ namespace SimpleCalculator
             {
                 oper = btn.Content.ToString();
                 textBoxDebug.Text = oper;
-                textBoxOp.Text = "Route 2";
                 finalnum2 = Convert.ToDouble(numDisp);
                 finalResult = getResult(finalnum1, finalnum2);
                 numHidden = finalResult.ToString();
@@ -70,7 +69,6 @@ namespace SimpleCalculator
             {
                 oper = btn.Content.ToString();
                 textBoxDebug.Text = oper;
-                textBoxOp.Text = "Route 1";
                 finalnum1 = Convert.ToDouble(numDisp);
                 finalnum2 = 0;
                 numHidden = numDisp;
@@ -83,7 +81,6 @@ namespace SimpleCalculator
 
         private void Button_Click_Res(object sender, RoutedEventArgs e)
         {
-            textBoxOp.Text = "Res triggered";
             Button btn = (Button)e.Source;
             if (btn.Content.ToString() == "=")
             {
